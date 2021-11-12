@@ -9,7 +9,7 @@ module.exports = () => {
   mongoose.connect(`${connectionURL}`, {}, (err, client) => {
     if (err) return console.log("Connection Failed...", err);
 
-    console.log("Connected to MongoDB...");
+    console.log("Connected to MongoDB Atlas...");
   });
 };
 

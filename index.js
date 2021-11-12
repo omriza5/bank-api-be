@@ -9,6 +9,9 @@ connectToDb();
 
 app.use(cors());
 app.use(express.json());
+app.get("/", (req, res) => {
+  res.send("Hello its a test");
+});
 app.use("/api/users", users);
 app.use("/api/transactions", transactions);
 
