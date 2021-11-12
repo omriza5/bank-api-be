@@ -6,7 +6,7 @@ const getUsers = async () => {
 };
 
 const getUser = async (userId) => {
-  const user = await User.findOne({ _id: userId });
+  const user = await User.findOne({ passportId: userId });
 
   if (!user) throw "User Not Found!";
 

@@ -4,7 +4,7 @@ const { getUser } = require("../db/usersQueries");
 const { addTransaction } = require("../db/transactionsQueries");
 const { isValidAmount } = require("../utils");
 
-const adminUserId = "618edbc5c1af4520fb8b8198";
+const adminUserId = "584791455";
 
 router.post("/deposit/:passportId", async (req, res) => {
   try {
