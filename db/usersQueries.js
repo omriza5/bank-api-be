@@ -13,8 +13,6 @@ const getUser = async (userId) => {
   return user;
 };
 const addUser = async (userObj) => {
-  /** check if user exist before adding it */
-
   const user = await User.findOne({ passportId: userObj.passportId });
   if (user) throw "User Already Exists";
 

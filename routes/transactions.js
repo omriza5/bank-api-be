@@ -3,8 +3,9 @@ const router = express.Router();
 const { getUser } = require("../db/usersQueries");
 const { addTransaction } = require("../db/transactionsQueries");
 const { isValidAmount } = require("../utils");
+require("dotenv").config();
 
-const adminUserId = "302560099";
+const adminUserId = process.env.ADMIN_ID;
 
 router.post("/deposit/:passportId", async (req, res) => {
   try {
