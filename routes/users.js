@@ -1,6 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const { addUser, getUsers, getUser } = require("../db/usersQueries");
+const {
+  addUser,
+  getUsers,
+  getUser,
+} = require("../controller/users.controller");
 
 /** Get all users */
 router.get("/", async (req, res) => {
